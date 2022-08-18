@@ -11,7 +11,7 @@
     "build": "tsc",
     "postinstall": "npm run build",
     "start": "node dist/main.js",
-    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts -i data/",
+    "start:dev": "node --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts -i data/",
     "lint": "eslint src/**/*.ts",
     "clean": "rimraf dist/"
   },
